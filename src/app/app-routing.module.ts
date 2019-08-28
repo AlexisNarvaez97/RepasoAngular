@@ -9,6 +9,7 @@ const routes: Routes = [
   { path: 'home', component: HomeComponent  },
   { path: 'about', component: AboutComponent  },
   { path: 'contact', component: ContactComponent  },
+  { path: 'posts', loadChildren: './pages/posts/posts.module#PostsModule'  }, // Lazy LOAD, se delcara la ruta y luego el nombre del modulo.
   { path: '**', redirectTo: 'home' }
 ];
 
